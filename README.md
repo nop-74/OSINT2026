@@ -1,50 +1,50 @@
-# OSINT-Suite v4.0 
+#OSINT-Suite версии 4.0 
 
-A powerful and multifunctional digital investigation toolkit built with Python. This desktop application provides various tools for reconnaissance, data analysis, and automation, all wrapped in a modern, tabbed graphical user interface (GUI).
+Мощный и многофункциональный инструментарий для цифровых исследований, созданный на Python. Это настольное приложение предоставляет различные инструменты для разведки, анализа данных и автоматизации, все это в современном графическом интерфейсе пользователя с вкладками (GUI).
 
 
-## 🌟 Features
+## 🌟 Особенности
 
-This toolkit is organized into a clean, tabbed interface, providing a wide range of capabilities:
+Этот инструментарий организован в понятный интерфейс с вкладками, предоставляющий широкий спектр возможностей:
 
-#### 🕵️ Identity & Network Intelligence
-* **IP Locator**: Get detailed geolocation data for any IP address.
-* **WHOIS Lookup**: Retrieve domain registration information.
-* **Port Scanner**: Scan a target for common open network ports.
-* **Username Lookup**: Check for the existence of a username across popular social media platforms.
-* **Subdomain Scanner**: Discover common subdomains associated with a domain.
+#### 🕵️ Идентификация и анализ сети
+* ** IP-локатор **: Получение подробных данных о геолокации для любого IP-адреса.
+* ** Поиск по WHOIS **: Получение информации о регистрации домена.
+* ** Сканер портов**: Сканирует объект на наличие общих открытых сетевых портов.
+* ** Поиск имени пользователя **: Проверяет наличие имени пользователя на популярных платформах социальных сетей.
+* ** Сканер поддоменов **: Обнаруживает общие поддомены, связанные с доменом.
 
-#### 📄 Web & Data Intelligence
-* **Web Scraper**: Extract page title and meta description from a URL.
-* **Table Extractor**: Scrape data tables from a webpage and export them to **CSV, Excel (.xlsx), or JSON** format using Pandas.
-* **Web Capture**: Take a full-page screenshot (`.png`) or generate a PDF from any website, even dynamic, JavaScript-heavy pages, using Selenium browser automation.
+#### 📄 Веб-аналитика и анализ данных
+* ** Веб-скребок **: Извлекает заголовок страницы и мета-описание из URL-адреса.
+* ** Table Extractor**: Извлекает таблицы данных с веб-страницы и экспортирует их в формат ** CSV, Excel (.xlsx) или JSON ** с помощью Pandas.
+* ** Веб-съемка **: Сделайте полностраничный снимок экрана (".png") или сгенерируйте PDF-файл с любого веб-сайта, даже с динамических страниц, загруженных на JavaScript, с помощью Selenium Browser automation.
 
-#### 🔐 Forensics & Crypto Analysis
-* **File Metadata Extractor**: Download and analyze `.jpg` or `.pdf` files from a URL to extract hidden metadata (EXIF data like GPS location, camera model, author info, etc.).
-* **Hash Cracker**: A simple MD5/SHA1 hash cracker that uses a provided wordlist to find the original password.
+#### 🔐 Криминалистический и криптоанализ.
+* ** Средство извлечения метаданных файлов **: Загружайте и анализируйте файлы ".jpg" или ".pdf" с URL-адреса для извлечения скрытых метаданных (данные EXIF, такие как местоположение GPS, модель камеры, информация об авторе и т.д.).
+* ** Средство взлома хэшей **: Простой хэш MD5 / SHA1. взломщик, который использует предоставленный список слов для поиска исходного пароля.
 
-#### 🎬 Multimedia Utilities
-* **Media Converter**: Convert local video files (`.mp4`) into animated GIFs or extract the audio into an MP3 file using MoviePy.
+#### 🎬 Мультимедийные утилиты
+* ** Медиаконвертер **: Конвертируйте локальные видеофайлы (".mp4") в анимированные GIF-файлы или извлекайте аудио в MP3-файл с помощью MoviePy.
 
-#### ✨ Professional Features
-* Modern, dark-themed GUI built with CustomTkinter.
-* Fully-featured command-line interface (CLI) for terminal power-users.
-* Ability to save the results from any tool to a `.txt` file.
+#### ✨ Профессиональные возможности
+* Современный графический интерфейс в темной тематике, созданный с помощью CustomTkinter.
+* Полнофункциональный интерфейс командной строки (CLI) для опытных пользователей терминалов.
+* Возможность сохранять результаты работы с любым инструментом в текстовый файл.
 
-## 🛠️ Technology Stack
+## Стек технологий 🛠️
 
-* **Core**: Python
-* **GUI**: CustomTkinter
-* **Web & Network**: Requests, Sockets, python-whois
-* **Browser Automation**: Selenium
-* **Data Processing**: Pandas, openpyxl
-* **Image/PDF Processing**: Pillow, PyPDF2
-* **Multimedia**: MoviePy (with FFMPEG)
-* **Packaging**: PyInstaller
+* **Ядро**: Python
+* ** ГРАФИЧЕСКИЙ интерфейс пользователя**: CustomTkinter
+* **Веб и сеть**: Запросы, сокеты, python-whois
+* **Автоматизация браузера**: Selenium
+* **Обработка данных**: Pandas, openpyxl
+* ** Обработка изображений/PDF**: Pillow, PyPDF2
+* **Мультимедиа**: MoviePy (с FFMPEG)
+* **Упаковка **: PyInstaller
 
-## 🚀 Setup & Installation
+## 🚀 Настройка и инсталляция
 
-To run this application from the source code, follow these steps:
+Чтобы запустить это приложение из исходного кода, выполните следующие действия:
 
 1.  **Clone the repository:**
     ```bash
@@ -68,24 +68,28 @@ To run this application from the source code, follow these steps:
     pip install -r requirements.txt
     ```
 
-4.  **Install FFMPEG (Required for Media Converter):**
-    This tool relies on an external program, FFMPEG. Please download it from [https://ffmpeg.org/](https://ffmpeg.org/) and ensure its location is added to your system's PATH.
+4. **Установите FFMPEG (требуется для Media Converter):**
+    Этот инструмент основан на внешней программе FFMPEG. Пожалуйста, загрузите его с [https://ffmpeg.org/](https://ffmpeg.org/) и убедитесь, что его местоположение указано в вашем системном каталоге.
 
-## 💻 How to Use
+## 💻 как использовать
 
-Run the GUI application with the following command:
+Запустите графическое приложение с помощью следующей команды:
 
-```bash
+``bash
 python gui_main.py
 ```
 
-Alternatively, you can use the original command-line interface:
-```bash
-# See all available CLI commands
-python main.py --help
+В качестве альтернативы вы можете использовать оригинальный интерфейс командной строки:
+``bash
+# Посмотреть все доступные CLI-команды
+python main.py --справка
 ```
 
-## License
-This project is released under the MIT License.
+## Лицензия
+Этот проект выпущен под лицензией Массачусетского технологического института.
 
-*Created by Mystery-World3*
+*Создан Mystery-World3*
+## Угостить меня Кофе
+
+![Alt text](https://github.com/nop-74/OPEN-AI-FREE-KEYS/blob/main/50%20р.jpg)
+![Alt text](https://github.com/nop-74/OPEN-AI-FREE-KEYS/blob/main/100.jpg)
